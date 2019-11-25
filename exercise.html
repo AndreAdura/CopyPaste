@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+function sum(){
+	let x= parseInt(document.getElementById("first").value);
+	let y= parseInt(document.getElementById("second").value);
+	let sum=(x+y);
+
+		document.getElementById("result").innerHTML=sum;
+}
+function average(){
+	let a= parseInt(document.getElementById("a1").value);
+	let b=  parseInt(document.getElementById("a2").value);
+	let c=  parseInt(document.getElementById("a3").value);
+	let Average= (a + b + c)/3;
+	document.getElementById("total").innerHTML=Average;
+}
+
+	let myArray = [10,20,30];
+	let i;
+	let avg;
+	let sum1=0;
+	for( i=0; i < myArray.length; i+=1){
+		sum1 += myArray[i];
+	}
+
+	avg = sum1/myArray.length;
+	function printArray(){
+		document.getElementById("print1").innerHTML = myArray;
+	}
+	function averageArray(){
+	document.getElementById("print2").innerHTML = avg;
+	}
+
+    
+
+  function check(){
+  	
+  		 if (document.getElementById("fav").checked && document.getElementById("fav1").checked)  {alert("correct 2 out of 2");}
+  		 else if (document.getElementById("fav").checked || document.getElementById("fav1").checked) {alert("correct 1 out of 2");}
+
+  			
+
+
+  				else {
+  					alert("0 out of 2");
+  				}
+
+  }
+
+
+		
+	</script> 
+<title></title>
+</head>
+
+
+
+<body>
+
+<h1>Sum two numbers</h1>
+<label>First Number</label>
+<input id="first"type="number" name="">
+<label>Second Number</label>
+<input id="second" type="number" name="">
+<button onclick="sum()">Calculate</button>
+<p id="result">Result</p>
+
+<br><hr>
+<h2>Average of 3 numbers</h2>
+<label>First Number</label>
+<input id="a1" type="number" name="">
+<label>Second Number</label>
+<input id="a2" type="number" name="">
+<label>Third Number</label>
+<input id="a3" type="number" name="">
+<button onclick="average()" >Result</button>
+<p id="total"></p>
+<br><hr>
+
+<h1>Print Array</h1>
+<button onclick="printArray()">Print</button>
+<p id="print1"></p>
+<button onclick="averageArray()" >Average</button>
+<p id="print2"></p>
+
+<h1>Question</h1>
+<p><strong>Your Fav Food?</strong></p>
+<form>
+	hummus<input id="fav" type="radio" name="food">
+	fries<input class="other" type="radio" name="food">
+	pizza<input class="other" type="radio" name="food">
+	salad<input class="other" type="radio" name="food">
+	<br>
+	
+</form>
+
+
+<h1>Question</h1>
+<p><strong>Your Fav Food?</strong></p>
+<form>
+	hummus<input id="fav1" type="radio" name="food">
+	fries<input class="other" type="radio" name="food">
+	pizza<input class="other" type="radio" name="food">
+	salad<input class="other" type="radio" name="food">
+	<br>
+	<button onclick="check()">check</button>
+</form>
+
+
+
+</body>
+</html>		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- var myArray = [10,10,10];
+
+		function printArray(){
+			console.log(myArray);
+		}
+
+		function averageArray(){
+			var sum = 0;
+			var average = 0;
+			for (var i =0; i < myArray.length; i++) {
+				sum = sum + myArray[i]
+
+			}
+			average = sum / myArray.length;
+			console.log(average);
+			console.log(sum);
+		} -->
